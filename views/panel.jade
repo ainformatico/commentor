@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= "Panel | Real time web valoration tool"
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='/bootstrap.min.css', type='text/css')
+    link(rel='stylesheet', href='/bootstrap-theme.min.css', type='text/css')
+    link(rel='stylesheet', href='/custom.css', type='text/css')
+    script(src='/socket.io/socket.io.js')
+    script(src='/jquery-2.1.1.min.js')
+    script(src='/bootstrap.min.js')
+  body
+    nav(class="navbar navbar-default" role="navigation")
+      .container-fluid
+        .navbar-header
+          a(class="navbar-brand" href="/") &copy; Commenter
+
+    #app.container
+      .row.text-center
+        .row.top-separator
+          button(class='btn btn-success btn-lg' data-type='voter') Voter
+        .row.top-separator
+          button(class='btn btn-success btn-lg' data-type='final') Final
+        .row.top-separator
+          button(class='btn btn-success btn-lg' data-type='chat') Chat
+        .row.top-separator
+          button(class='btn btn-danger' data-type='clear') Clear
+        .row.top-separator
+          button(class='btn btn-danger' data-type='wipe') Wipe
+
+    script(src='/panel.js')

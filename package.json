@@ -1,0 +1,15 @@
+{
+  "name"    : "Commentor",
+  "version" : "0.0.1",
+  "description" : "Real time comment and valoration tool",
+  "dependencies":
+  {
+    "socket.io"   : "latest",
+    "express"     : "latest",
+    "jade"        : "latest",
+    "supervisor"  : "latest",
+    "redis"       : "latest",
+    "escape-html" : "latest"
+  },
+  "author": "Alejandro El Informático"
+}

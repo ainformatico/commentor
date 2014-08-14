@@ -1,0 +1,56 @@
+.pull-center
+{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top-separator
+{
+  margin-top: 10px;
+}
+
+#messages
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.msg
+{
+  padding-left: 0.5em;
+}
+
+.username:before
+{
+  content: '@';
+}
+
+.username:after
+{
+  content: ': ';
+  margin-left: 0.2em;
+}
+
+.hl
+{
+  color: #428bca;
+  text-align: right;
+}
+
+.hl strong
+{
+  float: right;
+}
+
+.hl .username:after
+{
+  content: '';
+}
+
+.hl .username:before
+{
+  content: ' :';
+  margin-left: 0.5em;
+  margin-right: 0.2em;
+}
